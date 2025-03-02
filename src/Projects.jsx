@@ -24,7 +24,7 @@ export default function Projects({ onLinkChange }) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ root: sectionRef, amount: 0.5 }}
         transition={{ duration: 0.5 }}
-        className="relative mx-auto w-full max-w-6xl md:p-5"
+        className="relative mx-auto w-11/12 md:p-5"
       >
         <div className="flex flex-col justify-between gap-x-5 lg:flex-row">
           <h3 className="mb-3 flex cursor-default items-center justify-between text-xl font-extrabold uppercase lg:hidden lg:text-3xl">
@@ -127,7 +127,7 @@ function ProjectPreview({ selectedTab }) {
         transition={{ duration: 0.3 }}
       >
         <div className="flex flex-col space-y-10">
-          <div className="max-w-xl border-2 border-zinc-800 shadow-[-12px_12px_0px_0px] shadow-zinc-800">
+          <div className="border-2 border-zinc-800 shadow-[-12px_12px_0px_0px] shadow-zinc-800">
             <img
               src={selectedTab.image}
               className="aspect-video h-full w-full"
