@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Syne Variable", sans-serif;
+  --font-secondary: "Inter Variable", sans-serif;
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 0.05em #27272a;
+}
+
+.noiseFilter {
+  background-image: url(./assets/black-noise.png);
+  opacity: 0.04;
+}
+
+.backgroundMesh {
+  background-image: url(/bg-mesh.webp);
+  background-size: cover;
+  opacity: 0.6;
+}
