@@ -73,7 +73,7 @@ function ProjectTabs({ selectedTab, setSelectedTab, tabs }) {
                   animate={{ width: "100%" }}
                   transition={{ duration: 0.5, delay: 0 }}
                   exit={{ width: 0 }}
-                  className="absolute top-2 h-[3px] cursor-pointer bg-blue-400 md:top-3 md:h-1"
+                  className="absolute top-2 h-[3px] cursor-pointer bg-blue-500 md:top-3 md:h-1"
                 ></motion.div>
               )}
             </AnimatePresence>

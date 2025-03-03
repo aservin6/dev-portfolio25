@@ -46,16 +46,16 @@ export const socialLinkOptions = [
   {
     id: 1,
     url: "",
-    icon: <RiDownload2Line className="size-4 md:size-7" />,
+    icon: <RiDownload2Line className="size-5 md:size-7" />,
   },
   {
     id: 2,
     url: "https://www.linkedin.com/in/servinalex/",
-    icon: <RiLinkedinBoxFill className="size-4 md:size-7" />,
+    icon: <RiLinkedinBoxFill className="size-5 md:size-7" />,
   },
   {
     id: 3,
     url: "https://github.com/aservin6",
-    icon: <RiGithubFill className="size-4 md:size-7" />,
+    icon: <RiGithubFill className="size-5 md:size-7" />,
   },
 ];

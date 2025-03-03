@@ -55,11 +55,13 @@ body {
 
 .noiseFilter {
   background-image: url(./assets/black-noise.png);
-  opacity: 0.04;
+  opacity: 0.05;
 }
 
 .backgroundMesh {
-  background-image: url(/bg-mesh.webp);
+  background-image: url(/rainbow-mesh.jpg);
   background-size: cover;
-  opacity: 0.6;
+  background-position: center;
 }
+
+/* Photo by <a href="https://unsplash.com/@seanwsinclair?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sean Sinclair</a> on <a href="https://unsplash.com/photos/a-blurry-image-of-a-rainbow-colored-background-FQ7cRFUU1y0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */

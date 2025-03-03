@@ -74,10 +74,10 @@ function Subheading({ children }) {
     <motion.h2
       initial="initial"
       animate="animate"
-      whileHover="hoveblue"
+      whileHover="hovered"
       className="relative block overflow-hidden whitespace-nowrap"
     >
-      <div className="text-stroke cursor-default text-xl font-bold text-transparent uppercase sm:text-2xl md:text-3xl xl:text-5xl">
+      <div className="text-stroke cursor-default text-lg font-bold text-transparent uppercase sm:text-2xl md:text-3xl xl:text-4xl">
         {children.split("").map((l, i) => (
           <motion.span
             variants={{
@@ -87,7 +87,7 @@ function Subheading({ children }) {
               animate: {
                 y: 0,
               },
-              hoveblue: {
+              hovered: {
                 y: "-100%",
               },
             }}
@@ -105,7 +105,7 @@ function Subheading({ children }) {
       </div>
       <motion.div
         className="absolute inset-0 hidden cursor-default text-base font-bold uppercase md:block md:text-lg"
-        variants={{ initial: { y: "100%" }, hoveblue: { y: "10%" } }}
+        variants={{ initial: { y: "100%" }, hovered: { y: "10%" } }}
       >
         Transforming&nbsp;ideas&nbsp;into&nbsp;interactive&nbsp;experiences.
       </motion.div>

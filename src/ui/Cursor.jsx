@@ -8,7 +8,6 @@ export function Cursor() {
   });
   const [cursorType, setCursorType] = useState("auto");
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  console.log(isMobile);
   useEffect(() => {
     const updateMousePosition = (e) => {
       setMousePosition({
@@ -46,7 +45,7 @@ export function Cursor() {
                 className={`relative top-1/2 left-1/2 z-1001 h-1 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white mix-blend-difference`}
                 animate={{ scale: 12 }}
                 exit={{ scale: 1 }}
-                transition={{ duration: 0.2, ease: "easeIn" }}
+                transition={{ duration: 0.3, ease: "easeIn" }}
               />
             </motion.div>
           ) : (

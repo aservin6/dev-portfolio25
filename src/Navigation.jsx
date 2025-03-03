@@ -5,7 +5,7 @@ import { navLinkOptions } from "./data/portfolio";
 
 export default function Navigation({ selectedLink, onLinkClick }) {
   return (
-    <nav className="fixed top-4 right-4 z-20 text-sm font-bold uppercase md:top-10 md:right-10 md:text-2xl">
+    <nav className="fixed top-5 right-5 z-20 text-base font-bold uppercase md:top-10 md:right-10 md:text-2xl">
       <ul className="">
         {navLinkOptions.map((obj) => {
           const { id, url, text } = obj;
@@ -51,9 +51,9 @@ function NavLink({ url, text, selectedLink, onLinkClick }) {
             <motion.div
               initial={{}}
               animate={{ width: "100%" }}
-              transition={{ duration: 0.2, delay }}
+              transition={{ duration: 0.5, delay }}
               exit={{ width: 0 }}
-              className="absolute top-2 h-[3px] w-0 cursor-pointer bg-blue-400 md:top-3 md:h-1.5"
+              className="absolute top-2.5 h-[3px] w-0 cursor-pointer bg-blue-500 md:top-3 md:h-1.5"
             ></motion.div>
           )}
         </AnimatePresence>
