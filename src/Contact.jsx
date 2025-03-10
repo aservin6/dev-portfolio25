@@ -62,7 +62,7 @@ export default function Contact({ onLinkChange }) {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 90, ease: "linear", repeat: Infinity }}
-          className="backgroundMesh absolute top-15 left-1/2 -z-10 aspect-[10/9] w-5/6 -translate-x-1/2 scale-175 rounded-full blur-xl sm:top-0 sm:scale-150"
+          className="backgroundMesh absolute top-15 left-1/2 -z-10 aspect-[10/9] w-5/6 -translate-x-1/2 scale-175 rounded-full blur-xl will-change-transform sm:top-0 sm:scale-150"
         ></motion.div>
       </motion.div>
     </section>

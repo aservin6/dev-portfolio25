@@ -139,7 +139,7 @@ function ProjectPreview({ selectedTab }) {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 90, ease: "linear", repeat: Infinity }}
-          className="backgroundMesh absolute -top-1/5 left-1/2 -z-10 aspect-[10/9] w-full -translate-x-1/2 scale-115 rounded-full blur-xl"
+          className="backgroundMesh absolute -top-1/5 left-1/2 -z-10 aspect-[10/9] w-full -translate-x-1/2 scale-115 rounded-full blur-xl will-change-transform"
         ></motion.div>
       </motion.div>
     </AnimatePresence>
