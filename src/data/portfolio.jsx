@@ -45,7 +45,7 @@ export const navLinkOptions = [
 export const socialLinkOptions = [
   {
     id: 1,
-    url: "",
+    url: "/Alex_Servin_Resume.pdf",
     icon: <RiDownload2Line className="size-5 md:size-7" />,
   },
   {

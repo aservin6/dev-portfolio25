@@ -29,7 +29,7 @@ export default function Marquee() {
 
 function MarqueeItem({ icons, from, to }) {
   return (
-    <div className="flex items-center border border-y border-zinc-800 py-2">
+    <div className="flex w-full items-center border-y border-zinc-800 py-2">
       <motion.div
         initial={{ x: `${from}` }}
         animate={{ x: `${to}` }}
@@ -48,7 +48,6 @@ function MarqueeItem({ icons, from, to }) {
           );
         })}
       </motion.div>
-
       <motion.div
         initial={{ x: `${from}` }}
         animate={{ x: `${to}` }}
@@ -57,7 +56,25 @@ function MarqueeItem({ icons, from, to }) {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="will-change flex flex-shrink-0"
+        className="flex flex-shrink-0 will-change-transform"
+      >
+        {icons.map((item, index) => {
+          return (
+            <div className="w-12 pr-10 md:w-24 md:pr-20" key={index}>
+              {item}
+            </div>
+          );
+        })}
+      </motion.div>
+      <motion.div
+        initial={{ x: `${from}` }}
+        animate={{ x: `${to}` }}
+        transition={{
+          duration: 60,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+        className="flex flex-shrink-0 will-change-transform"
       >
         {icons.map((item, index) => {
           return (

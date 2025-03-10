@@ -13,16 +13,16 @@ export default function Contact({ onLinkChange }) {
     <section
       ref={sectionRef}
       id="contact"
-      className="flex h-screen w-full items-center justify-center"
+      className="relative flex h-full w-full items-center justify-center"
     >
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ root: sectionRef, amount: 0.5 }}
         transition={{ duration: 0.5 }}
-        className="relative mx-auto w-11/12 md:w-4/5 md:p-5"
+        className="relative mx-auto w-11/12 max-w-2xl md:w-4/5 md:p-5"
       >
-        <div className="mx-auto flex max-w-2xl flex-col border-2 bg-zinc-50 p-3 shadow-[-12px_12px_0px_0px] shadow-zinc-800">
+        <div className="mx-auto flex flex-col border-2 bg-zinc-50 p-3 shadow-[-12px_12px_0px_0px] shadow-zinc-800">
           <div className="flex items-center justify-center">
             <form
               action="https://getform.io/f/c287a040-25e2-4080-9ea5-050e4346aa45"
@@ -59,6 +59,11 @@ export default function Contact({ onLinkChange }) {
             </form>
           </div>
         </div>
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 90, ease: "linear", repeat: Infinity }}
+          className="backgroundMesh absolute top-15 left-1/2 -z-10 aspect-[10/9] w-5/6 -translate-x-1/2 scale-175 rounded-full blur-xl sm:top-0 sm:scale-150"
+        ></motion.div>
       </motion.div>
     </section>
   );

@@ -53,7 +53,7 @@ function NavLink({ url, text, selectedLink, onLinkClick }) {
               animate={{ width: "100%" }}
               transition={{ duration: 0.5, delay }}
               exit={{ width: 0 }}
-              className="absolute top-2.5 h-[3px] w-0 cursor-pointer bg-blue-500 md:top-3 md:h-1.5"
+              className="absolute top-2.5 h-[3px] w-0 cursor-pointer bg-blue-400 md:top-3 md:h-1.5"
             ></motion.div>
           )}
         </AnimatePresence>

@@ -59,7 +59,7 @@ body {
 }
 
 .backgroundMesh {
-  background-image: url(/rainbow-mesh.jpg);
+  background-image: url(/mesh-bg.jpg);
   background-size: cover;
   background-position: center;
 }

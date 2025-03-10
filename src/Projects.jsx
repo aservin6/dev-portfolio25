@@ -17,14 +17,14 @@ export default function Projects({ onLinkChange }) {
     <section
       ref={sectionRef}
       id="projects"
-      className="flex h-screen w-full items-center justify-center"
+      className="relative flex h-screen w-full items-center justify-center"
     >
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ root: sectionRef, amount: 0.5 }}
         transition={{ duration: 0.5 }}
-        className="relative mx-auto w-11/12 md:p-5"
+        className="relative mx-auto w-11/12 max-w-7xl md:p-5 xl:w-full"
       >
         <div className="flex flex-col justify-between gap-x-5 lg:flex-row">
           <h3 className="mb-3 flex cursor-default items-center justify-between text-xl font-extrabold uppercase lg:hidden lg:text-3xl">
@@ -73,7 +73,7 @@ function ProjectTabs({ selectedTab, setSelectedTab, tabs }) {
                   animate={{ width: "100%" }}
                   transition={{ duration: 0.5, delay: 0 }}
                   exit={{ width: 0 }}
-                  className="absolute top-2 h-[3px] cursor-pointer bg-blue-500 md:top-3 md:h-1"
+                  className="absolute top-2 h-[3px] cursor-pointer bg-blue-400 md:top-3 md:h-1"
                 ></motion.div>
               )}
             </AnimatePresence>
@@ -125,6 +125,7 @@ function ProjectPreview({ selectedTab }) {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: -10, opacity: 0 }}
         transition={{ duration: 0.3 }}
+        className="relative"
       >
         <div className="flex flex-col space-y-10">
           <div className="border-2 border-zinc-800 shadow-[-12px_12px_0px_0px] shadow-zinc-800">
@@ -135,6 +136,11 @@ function ProjectPreview({ selectedTab }) {
           </div>
           <ProjectTags selectedTab={selectedTab} />
         </div>
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 90, ease: "linear", repeat: Infinity }}
+          className="backgroundMesh absolute -top-1/5 left-1/2 -z-10 aspect-[10/9] w-full -translate-x-1/2 scale-115 rounded-full blur-xl"
+        ></motion.div>
       </motion.div>
     </AnimatePresence>
   );

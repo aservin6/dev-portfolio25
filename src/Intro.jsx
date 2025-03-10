@@ -21,7 +21,13 @@ export default function Intro({ onLinkChange }) {
           <Heading>Alex&nbsp;Servin</Heading>
           <Subheading>Front-End&nbsp;Developer</Subheading>
         </div>
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 90, ease: "linear", repeat: Infinity }}
+          className="backgroundMesh absolute -top-full left-1/2 -z-10 aspect-[10/9] w-5/6 -translate-x-1/2 rounded-full blur-xl"
+        ></motion.div>
       </div>
+
       <BackgroundElements />
     </section>
   );
@@ -119,7 +125,7 @@ function BackgroundElements() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.03 }}
       transition={{ duration: 1 }}
-      className="font-secondary pointer-events-none absolute top-1/4 left-1/3 text-9xl font-extrabold select-none md:top-1/6 md:left-1/2 md:text-[20rem]"
+      className="font-secondary pointer-events-none absolute top-1/5 right-0 text-[10rem] font-extrabold select-none md:top-1/6 md:right-10 md:text-[15rem] lg:text-[20rem] xl:right-1/4"
     >{`</>`}</motion.div>
   );
 }
