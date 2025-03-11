@@ -21,11 +21,12 @@ export default function Intro({ onLinkChange }) {
           <Heading>Alex&nbsp;Servin</Heading>
           <Subheading>Front-End&nbsp;Developer</Subheading>
         </div>
+        {/* Background gradient */}
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 90, ease: "linear", repeat: Infinity }}
-          className="backgroundMesh absolute -top-full left-1/2 -z-10 aspect-[10/9] w-5/6 -translate-x-1/2 rounded-full blur-xl will-change-transform"
-        ></motion.div>
+          className="backgroundMesh absolute -top-full left-1/2 -z-10 aspect-[10/9] w-full max-w-2xl -translate-x-1/2 rounded-full blur-xl will-change-transform"
+        />
       </div>
 
       <BackgroundElements />

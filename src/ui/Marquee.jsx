@@ -20,7 +20,7 @@ export default function Marquee() {
   return (
     <div
       id="marquee"
-      className="mx-auto my-10 flex cursor-default items-center overflow-hidden"
+      className="relative -z-20 mx-auto my-10 flex cursor-default items-center overflow-hidden"
     >
       <MarqueeItem icons={icons} from={0} to={"-100%"} />
     </div>

@@ -13,7 +13,7 @@ export default function Contact({ onLinkChange }) {
     <section
       ref={sectionRef}
       id="contact"
-      className="relative flex h-full w-full items-center justify-center"
+      className="relative flex h-full w-full items-center justify-center overflow-hidden"
     >
       <motion.div
         initial={{ opacity: 0, x: -100 }}
@@ -59,11 +59,12 @@ export default function Contact({ onLinkChange }) {
             </form>
           </div>
         </div>
+        {/* Background gradient */}
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 90, ease: "linear", repeat: Infinity }}
-          className="backgroundMesh absolute top-15 left-1/2 -z-10 aspect-[10/9] w-5/6 -translate-x-1/2 scale-175 rounded-full blur-xl will-change-transform sm:top-0 sm:scale-150"
-        ></motion.div>
+          className="backgroundMesh absolute top-1/2 left-1/2 -z-10 aspect-[10/9] w-5/6 max-w-xl -translate-x-1/2 -translate-y-1/2 scale-175 rounded-full blur-xl will-change-transform sm:scale-150"
+        />
       </motion.div>
     </section>
   );

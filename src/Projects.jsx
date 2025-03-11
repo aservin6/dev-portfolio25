@@ -17,16 +17,16 @@ export default function Projects({ onLinkChange }) {
     <section
       ref={sectionRef}
       id="projects"
-      className="relative flex h-screen w-full items-center justify-center"
+      className="relative flex h-screen w-full items-center justify-center overflow-x-hidden"
     >
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ root: sectionRef, amount: 0.5 }}
         transition={{ duration: 0.5 }}
-        className="relative mx-auto w-11/12 max-w-7xl md:p-5 xl:w-full"
+        className="relative mx-auto w-full max-w-7xl px-5 md:p-5 xl:w-full"
       >
-        <div className="flex flex-col justify-between gap-x-5 lg:flex-row">
+        <div className="mx-auto flex max-w-3xl flex-col justify-between gap-x-5 lg:max-w-full lg:flex-row lg:gap-x-10">
           <h3 className="mb-3 flex cursor-default items-center justify-between text-xl font-extrabold uppercase lg:hidden lg:text-3xl">
             <span className="">Projects</span>
             <span className="font-secondary">{`</>`}</span>
@@ -136,11 +136,12 @@ function ProjectPreview({ selectedTab }) {
           </div>
           <ProjectTags selectedTab={selectedTab} />
         </div>
+        {/* Background gradient */}
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 90, ease: "linear", repeat: Infinity }}
-          className="backgroundMesh absolute -top-1/5 left-1/2 -z-10 aspect-[10/9] w-full -translate-x-1/2 scale-115 rounded-full blur-xl will-change-transform"
-        ></motion.div>
+          className="backgroundMesh absolute top-1/2 left-1/2 -z-10 aspect-[10/9] w-full max-w-2xl -translate-x-1/2 -translate-y-1/2 scale-115 rounded-full blur-xl will-change-transform"
+        />
       </motion.div>
     </AnimatePresence>
   );
