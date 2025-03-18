@@ -12,6 +12,18 @@ export const tabs = [
     links: [{ live: "https://indiecosm.com", github: null }],
   },
   {
+    image: "/street-commerce.png",
+    label: "E-commerce Site",
+    tags: ["Next.js", "Sanity", "Stripe", "TailwindCSS"],
+    links: [
+      {
+        live: "https://street-commerce.vercel.app",
+
+        github: "https://github.com/aservin6/street-commerce",
+      },
+    ],
+  },
+  {
     image: "/akuma.png",
     label: "Akuma Landing Page",
     tags: ["React", "TailwindCSS", "Vite"],
@@ -19,18 +31,6 @@ export const tabs = [
       {
         live: "https://akuma-landing-page.netlify.app",
         github: "https://github.com/aservin6/akuma-landing-page",
-      },
-    ],
-  },
-  {
-    image: "/budget-app.png",
-    label: "Simple Budget App",
-    tags: ["React", "TypeScript", "TailwindCSS"],
-    links: [
-      {
-        live: "https://budget-tracker-ts.netlify.app/",
-
-        github: "https://github.com/aservin6/budget-tracker",
       },
     ],
   },
