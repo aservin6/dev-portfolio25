@@ -17,7 +17,7 @@ export const tabs = [
     tags: ["Next.js", "Sanity", "Stripe", "TailwindCSS"],
     links: [
       {
-        live: "https://street-commerce.vercel.app",
+        live: "https://street-commerce25.vercel.app",
 
         github: "https://github.com/aservin6/street-commerce",
       },
