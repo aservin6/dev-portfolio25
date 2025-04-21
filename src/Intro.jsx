@@ -19,7 +19,7 @@ export default function Intro({ onLinkChange }) {
       <div className="relative top-1/4 mx-auto flex max-w-fit flex-col space-y-12 md:p-5">
         <div className="flex flex-col justify-center select-none">
           <Heading>Alex&nbsp;Servin</Heading>
-          <Subheading>Front-End&nbsp;Developer</Subheading>
+          <Subheading>Full-Stack&nbsp;Developer</Subheading>
         </div>
         {/* Background gradient */}
         <motion.div
